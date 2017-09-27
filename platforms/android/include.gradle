@@ -1,9 +1,10 @@
 repositories {
   jcenter()
+  maven { url "https://jitpack.io" }
 }
 
 dependencies {
-  compile 'com.yalantis:ucrop:1.5.0'
+  compile 'com.github.yalantis:ucrop:2.2.1-native'
 }
 
 android {

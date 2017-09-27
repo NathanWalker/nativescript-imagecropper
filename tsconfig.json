@@ -1,21 +1,26 @@
 {
-  "compilerOptions":{
-    "target":"es5",
-    "module":"commonjs",
-    "removeComments":true,
-    "experimentalDecorators":true,
-    "sourceMap":true
-  },
-  "files":[
-    "demo/node_modules/tns-core-modules/tns-core-modules.d.ts",
-    "node_modules/ios.d.ts",
-    "node_modules/android17.d.ts",
-    "imagecropper.android.ts",
-    "imagecropper.ios.ts"
-  ],
-  "compileOnSave":false,
-  "exclude":[
-    "./platforms/**/*.ts",
-    "./node_modules/*.ts"
-  ]
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "noEmitHelpers": true,
+        "sourceMap": false,
+        "removeComments": true,
+        "declaration": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "module": "commonjs",
+        "lib": ["es6", "dom"],
+        "skipLibCheck": true,
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+            "./node_modules/tns-core-modules/*",
+            "./node_modules/*"
+            ]
+        }
+    },
+    "exclude": [
+        "demo",
+        "node_modules"
+    ]
 }
